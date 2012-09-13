@@ -8,6 +8,10 @@ CUR_VER = $(shell uscan --dehs | sed -n 's/.*<upstream-version>\(.*\)<\/upstream
 override_dh_auto_configure:
 	dh_auto_configure -- LIBDIR=lib/$(DEB_HOST_MULTIARCH) QXMPP_USE_SPEEX=1 QXMPP_USE_THEORA=1
 
+override_dh_auto_build:
+	dh_auto_build
+	make docs
+
 override_dh_strip:
 	dh_strip --dbg-package=libqxmpp0-dbg
 

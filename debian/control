@@ -1,4 +1,4 @@
-Source: qxmpp
+Source: qxmpp-unstable
 Section: libs
 Priority: optional
 Maintainer: Jeremy Lainé <jeremy.laine@m4x.org>
