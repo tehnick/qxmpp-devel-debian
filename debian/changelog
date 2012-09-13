@@ -1,3 +1,9 @@
+qxmpp-unstable (0.7.3-39-g31cf087-0ppa1~quantal1) quantal; urgency=low
+
+  * Minor update from GIT master branch.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Thu, 13 Sep 2012 21:28:01 +0300
+
 qxmpp (0.7.3-1ppa1~quantal1) quantal; urgency=low
 
   * Package in Launchpad was sync with package in Debian.
