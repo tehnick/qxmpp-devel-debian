@@ -1,3 +1,9 @@
+qxmpp-unstable (0.7.3-39-g31cf087-0ppa2~quantal1) quantal; urgency=low
+
+  * Add build dep from doxygen.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Fri, 14 Sep 2012 07:08:18 +0300
+
 qxmpp-unstable (0.7.3-39-g31cf087-0ppa1~quantal1) quantal; urgency=low
 
   * Minor update from GIT master branch.
