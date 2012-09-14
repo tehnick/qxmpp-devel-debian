@@ -3,7 +3,7 @@ Section: libs
 Priority: optional
 Maintainer: Jeremy Lainé <jeremy.laine@m4x.org>
 Uploaders: Boris Pek <tehnick-8@mail.ru>
-Build-Depends: debhelper (>= 9), libqt4-dev, libspeex-dev, libtheora-dev
+Build-Depends: debhelper (>= 9), libqt4-dev, libspeex-dev, libtheora-dev, doxygen
 Standards-Version: 3.9.3
 Homepage: http://code.google.com/p/qxmpp/
 Vcs-Git: git://anonscm.debian.org/collab-maint/qxmpp.git
