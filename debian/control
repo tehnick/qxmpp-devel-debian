@@ -8,7 +8,6 @@ Standards-Version: 3.9.3
 Homepage: http://code.google.com/p/qxmpp/
 Vcs-Git: git://anonscm.debian.org/collab-maint/qxmpp.git
 Vcs-Browser: http://git.debian.org/?p=collab-maint/qxmpp.git
-DM-Upload-Allowed: yes
 
 Package: libqxmpp0
 Architecture: any
