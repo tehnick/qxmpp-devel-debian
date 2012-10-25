@@ -1,8 +1,8 @@
-qxmpp-unstable (0.7.4-1-gbe4159b-0ppa1~quantal1) quantal; urgency=low
+qxmpp-unstable (0.7.4-3-g1ba3b08-0ppa1~quantal1) quantal; urgency=low
 
   * Minor update from Git master branch.
 
- -- Boris Pek <tehnick-8@mail.ru>  Fri, 12 Oct 2012 20:13:56 +0300
+ -- Boris Pek <tehnick-8@mail.ru>  Thu, 25 Oct 2012 19:58:38 +0300
 
 qxmpp (0.7.3-1ppa1~quantal1) quantal; urgency=low
 
