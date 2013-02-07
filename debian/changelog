@@ -1,3 +1,9 @@
+qxmpp-unstable (0.7.5-4-g5c9a346-0ppa1~raring1) raring; urgency=low
+
+  * Minor update from Git master branch.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Thu, 07 Feb 2013 20:21:09 +0200
+
 qxmpp-unstable (0.7.5-0ppa1~raring1) raring; urgency=low
 
   * Minor update from Git master branch.
