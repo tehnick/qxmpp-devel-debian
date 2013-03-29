@@ -6,8 +6,8 @@ Uploaders: Boris Pek <tehnick-8@mail.ru>
 Build-Depends: debhelper (>= 9), libqt4-dev, libspeex-dev, libtheora-dev, doxygen
 Standards-Version: 3.9.3
 Homepage: http://code.google.com/p/qxmpp/
-Vcs-Git: git://anonscm.debian.org/collab-maint/qxmpp.git
-Vcs-Browser: http://git.debian.org/?p=collab-maint/qxmpp.git
+Vcs-Git: git://github.com/tehnick/qxmpp-unstable-debian.git
+Vcs-Browser: https://github.com/tehnick/qxmpp-unstable-debian
 
 Package: libqxmpp0
 Architecture: any
