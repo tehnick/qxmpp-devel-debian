@@ -2,7 +2,7 @@ Source: qxmpp-unstable
 Section: libs
 Priority: optional
 Maintainer: Jeremy Lainé <jeremy.laine@m4x.org>
-Uploaders: Boris Pek <tehnick-8@mail.ru>
+Uploaders: Boris Pek <tehnick@debian.org>
 Build-Depends: debhelper (>= 9), libqt4-dev, libspeex-dev, libtheora-dev, doxygen
 Standards-Version: 3.9.3
 Homepage: http://code.google.com/p/qxmpp/
