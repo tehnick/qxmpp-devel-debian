@@ -1,3 +1,9 @@
+qxmpp-unstable (0.7.6-11-g7a81ff6-0ppa1~saucy1) saucy; urgency=low
+
+  * Minor update from Git master branch.
+
+ -- Boris Pek <tehnick@debian.org>  Wed, 28 Aug 2013 19:31:35 +0300
+
 qxmpp-unstable (0.7.6-2-g9565e3b-0ppa1~raring1) raring; urgency=low
 
   * Minor update from Git master branch.
