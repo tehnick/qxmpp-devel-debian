@@ -1,20 +1,8 @@
-qxmpp-unstable (0.7.6-12-gfa656fe-0ppa1~trusty1) trusty; urgency=medium
+qxmpp-unstable (0.7.6-14-g9871db7-0ppa1~trusty1) trusty; urgency=medium
 
   * Minor update from Git master branch.
 
- -- Boris Pek <tehnick@debian.org>  Thu, 30 Jan 2014 20:52:25 +0400
-
-qxmpp-unstable (0.7.6-11-g7a81ff6-0ppa1~saucy1) saucy; urgency=low
-
-  * Minor update from Git master branch.
-
- -- Boris Pek <tehnick@debian.org>  Wed, 28 Aug 2013 19:31:35 +0300
-
-qxmpp-unstable (0.7.6-2-g9565e3b-0ppa1~raring1) raring; urgency=low
-
-  * Minor update from Git master branch.
-
- -- Boris Pek <tehnick-8@mail.ru>  Tue, 12 Mar 2013 18:07:48 +0200
+ -- Boris Pek <tehnick@debian.org>  Tue, 11 Feb 2014 14:55:30 +0400
 
 qxmpp (0.7.3-1ppa1~quantal1) quantal; urgency=low
 
