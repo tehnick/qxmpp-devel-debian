@@ -1,8 +1,8 @@
-qxmpp-unstable (0.7.6-20-gcd94a1a-0ppa1~trusty1) trusty; urgency=medium
+qxmpp-unstable (0.7.6-21-g58cbb3f-0ppa1~trusty1) trusty; urgency=medium
 
   * Minor update from Git master branch.
 
- -- Boris Pek <tehnick@debian.org>  Sat, 22 Mar 2014 22:52:56 +0400
+ -- Boris Pek <tehnick@debian.org>  Tue, 25 Mar 2014 23:51:58 +0400
 
 qxmpp (0.7.3-1ppa1~quantal1) quantal; urgency=low
 
