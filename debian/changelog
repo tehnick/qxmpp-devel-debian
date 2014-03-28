@@ -4,12 +4,49 @@ qxmpp-unstable (0.8.0-9-g89abcd2-0ppa1~trusty1) trusty; urgency=medium
 
  -- Boris Pek <tehnick@debian.org>  Fri, 28 Mar 2014 14:45:59 +0400
 
-qxmpp (0.7.3-1ppa1~quantal1) quantal; urgency=low
+qxmpp (0.8.0-1) unstable; urgency=medium
 
-  * Package in Launchpad was sync with package in Debian.
-  * Changelog was cleaned.
+  [ Jeremy Lainé ]
+  * New upstream release.
+  * Bump Standards-Version to 3.9.5 (was 3.9.3): no changes required.
 
- -- Boris Pek <tehnick-8@mail.ru>  Fri, 07 Sep 2012 19:54:42 +0300
+  [ Boris Pek ]
+  * Update debian/watch: tarballs are stored at another location now.
+  * Update debian/control:
+    - update using wrap-and-sort tool
+    - update Homepage field
+    - add doxygen to Build-Depends-Indep
+  * Update debian/rules:
+    - update get-orig-source section
+    - set option --list-missing for dh
+    - add option -Wl,--as-needed to LDFLAGS
+    - generate documentation during build (Doxygen is used)
+  * Update years in debian/copyright.
+  * Add debian/libqxmpp-doc.lintian-overrides.
+  * Delete debian/libqxmpp-doc.links.
+  * Delete dependency on libjs-jquery from libqxmpp-doc package.
+  * Fix lintian note vcs-field-not-canonical.
+
+ -- Boris Pek <tehnick@debian.org>  Fri, 28 Mar 2014 17:25:02 +0400
+
+qxmpp (0.7.6-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jeremy Lainé <jeremy.laine@m4x.org>  Tue, 12 Mar 2013 09:36:43 +0100
+
+qxmpp (0.7.5-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Sun, 27 Jan 2013 19:44:14 +0200
+
+qxmpp (0.7.4-1) unstable; urgency=low
+
+  * New upstream release.
+  * Remove obsolete DM-Upload-Allowed flag.
+
+ -- Jeremy Lainé <jeremy.laine@m4x.org>  Mon, 01 Oct 2012 15:24:00 +0200
 
 qxmpp (0.7.3-1) unstable; urgency=low
 
