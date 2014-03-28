@@ -1,3 +1,9 @@
+qxmpp-unstable (0.8.0-9-g89abcd2-0ppa2~trusty1) trusty; urgency=medium
+
+  * Some fixes in package.
+
+ -- Boris Pek <tehnick@debian.org>  Fri, 28 Mar 2014 19:14:16 +0400
+
 qxmpp-unstable (0.8.0-9-g89abcd2-0ppa1~trusty1) trusty; urgency=medium
 
   * Minor update from Git master branch.
