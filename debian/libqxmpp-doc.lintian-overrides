@@ -1,0 +1,5 @@
+# There are too many identical small files. Problem should be fixed in Doxygen.
+libqxmpp-doc: duplicate-files usr/share/doc/libqxmpp-doc/html/*
+
+# See details at /usr/share/doc/doxygen/README.jquery.
+libqxmpp-doc: embedded-javascript-library usr/share/doc/libqxmpp-doc/html/jquery.js
