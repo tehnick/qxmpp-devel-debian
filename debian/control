@@ -3,9 +3,10 @@ Section: libs
 Priority: optional
 Maintainer: Jeremy Lainé <jeremy.laine@m4x.org>
 Uploaders: Boris Pek <tehnick@debian.org>
-Build-Depends: debhelper (>= 9), libqt4-dev, libspeex-dev, libtheora-dev, doxygen
-Standards-Version: 3.9.4
-Homepage: http://code.google.com/p/qxmpp/
+Build-Depends: debhelper (>= 9), libqt4-dev, libspeex-dev, libtheora-dev
+Build-Depends-Indep: doxygen
+Standards-Version: 3.9.5
+Homepage: https://github.com/qxmpp-project/qxmpp
 Vcs-Git: git://github.com/tehnick/qxmpp-unstable-debian.git
 Vcs-Browser: https://github.com/tehnick/qxmpp-unstable-debian
 
@@ -35,7 +36,7 @@ Description: Debugging symbols for the QXmpp library
 Package: libqxmpp-dev
 Section: libdevel
 Architecture: any
-Depends: ${misc:Depends}, libqxmpp0 (= ${binary:Version}), libqt4-dev
+Depends: libqt4-dev, libqxmpp0 (= ${binary:Version}), ${misc:Depends}
 Suggests: libqxmpp-doc
 Multi-Arch: same
 Description: Development files for the QXmpp library
@@ -47,11 +48,10 @@ Description: Development files for the QXmpp library
 Package: libqxmpp-doc
 Section: doc
 Architecture: all
-Depends: ${misc:Depends}, libjs-jquery, lynx | www-browser
+Depends: lynx | www-browser, ${misc:Depends}
 Suggests: libqxmpp-dev
 Description: Documentation for the QXmpp library
  QXmpp is a cross-platform C++ XMPP library built upon Qt. It strives to be
  as easy to use as possible.
  .
  This package contains the HTML documentation.
-
