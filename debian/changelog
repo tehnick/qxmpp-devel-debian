@@ -1,3 +1,9 @@
+qxmpp-qt4-devel (0.9.3-0ppa1~wily1) wily; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Tue, 02 Feb 2016 01:44:08 +0300
+
 qxmpp-qt4-devel (0.9.3-1ppa1~xenial1) xenial; urgency=medium
 
   * Rebuild for Launchpad.
