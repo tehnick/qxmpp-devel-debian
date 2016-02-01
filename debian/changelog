@@ -1,10 +1,4 @@
-qxmpp-devel (0.9.3-0ppa1~xenial1) xenial; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 02 Feb 2016 00:54:25 +0300
-
-qxmpp-devel (0.9.3-1ppa1~xenial1) xenial; urgency=medium
+qxmpp-qt4-devel (0.9.3-1ppa1~xenial1) xenial; urgency=medium
 
   * Rebuild for Launchpad.
 

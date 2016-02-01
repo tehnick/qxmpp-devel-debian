@@ -1,4 +1,4 @@
-Source: qxmpp-devel
+Source: qxmpp-qt4-devel
 Section: libs
 Priority: optional
 Maintainer: Jeremy Lainé <jeremy.laine@m4x.org>
