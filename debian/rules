@@ -8,7 +8,7 @@ CUR_VER = $(shell echo "$(USCAN_REPORT)" | sed -n 's/.*<upstream-version>\(.*\)<
 CUR_URL = $(shell echo "$(USCAN_REPORT)" | sed -n 's/.*<upstream-url>\(.*\)<\/upstream-url>.*/\1/p')
 
 export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
-export QT_SELECT = qt5
+export QT_SELECT = qt4
 
 %:
 	dh $@ --parallel --list-missing
