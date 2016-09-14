@@ -1,3 +1,9 @@
+qxmpp-devel (0.9.3-7-g3419485-0ppa1~yakkety1) yakkety; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Wed, 14 Sep 2016 22:38:55 +0300
+
 qxmpp-devel (0.9.3-0ppa1~xenial1) xenial; urgency=medium
 
   * New Git snapshot.
