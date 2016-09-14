@@ -5,11 +5,12 @@ diff --git a/tests/tests.pro b/tests/tests.pro
 index bbc5989..e4bea5a 100644
 --- a/tests/tests.pro
 +++ b/tests/tests.pro
-@@ -2,11 +2,9 @@ TEMPLATE = subdirs
+@@ -2,12 +2,10 @@ TEMPLATE = subdirs
  SUBDIRS = \
      qxmpparchiveiq \
      qxmppbindiq \
 -    qxmppcallmanager \
+     qxmppcarbonmanager \
      qxmppdataform \
      qxmppdiscoveryiq \
      qxmppentitytimeiq \
@@ -17,7 +18,7 @@ index bbc5989..e4bea5a 100644
      qxmppiq \
      qxmppjingleiq \
      qxmppmessage \
-@@ -25,7 +23,6 @@ SUBDIRS = \
+@@ -26,7 +24,6 @@ SUBDIRS = \
      qxmppstanza \
      qxmppstreamfeatures \
      qxmppstunmessage \
