@@ -1,3 +1,9 @@
+qxmpp-qt4-devel (0.9.3-7-g3419485-0ppa1~wily1) wily; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Wed, 14 Sep 2016 23:02:27 +0300
+
 qxmpp-qt4-devel (0.9.3-0ppa1~wily1) wily; urgency=medium
 
   * New Git snapshot.
