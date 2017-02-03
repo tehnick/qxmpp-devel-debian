@@ -1,3 +1,9 @@
+qxmpp-qt4-devel (0.9.3-13-g9deb86b-0ppa1~vivid1) vivid; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Sat, 04 Feb 2017 01:25:40 +0300
+
 qxmpp-qt4-devel (0.9.3-9-g15293eb-0ppa1~vivid1) vivid; urgency=medium
 
   * New Git snapshot.
