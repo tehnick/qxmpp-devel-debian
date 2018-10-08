@@ -7,7 +7,7 @@ export QT_SELECT = qt5
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 CMAKEOPTS = -DLIB_INSTALL_DIR="/usr/lib/$(DEB_HOST_MULTIARCH)" \
-            -DBUILD_DOCUMENTATION_KDE=OFF \
+            -DBUILD_DOCUMENTATION=OFF \
             -DBUILD_EXAMPLES=ON \
             -DBUILD_TESTS=ON \
             -DWITH_SPEEX=ON \
