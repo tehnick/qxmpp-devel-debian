@@ -260,4 +260,3 @@ qxmpp (0.1.91-1) experimental; urgency=low
   * Initial upload to Debian (Closes: #592413).
 
  -- Jeremy Lainé <jeremy.laine@m4x.org>  Wed, 11 Aug 2010 10:55:24 +0200
-
