@@ -1,9 +1,10 @@
 Source: qxmpp-devel
 Section: libs
 Priority: optional
-Maintainer: Jeremy Lainé <jeremy.laine@m4x.org>
-Uploaders: Boris Pek <tehnick@debian.org>
-Build-Depends: debhelper (>= 9),
+Maintainer: Debian XMPP Maintainers <pkg-xmpp-devel@alioth-lists.debian.net>
+Uploaders: Jeremy Lainé <jeremy.laine@m4x.org>, Boris Pek <tehnick@debian.org>
+Build-Depends: cmake,
+               debhelper (>= 9),
                doxygen,
                graphviz,
                libopus-dev,
@@ -11,10 +12,10 @@ Build-Depends: debhelper (>= 9),
                libtheora-dev,
                libvpx-dev,
                qtbase5-dev
-Standards-Version: 3.9.6
+Standards-Version: 4.2.1
 Homepage: https://github.com/qxmpp-project/qxmpp
-Vcs-Git: git://anonscm.debian.org/collab-maint/qxmpp.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/qxmpp.git
+Vcs-Git: https://github.com/tehnick/qxmpp-devel-debian.git
+Vcs-Browser: https://github.com/tehnick/qxmpp-devel-debian
 
 Package: libqxmpp0
 Architecture: any
@@ -26,18 +27,6 @@ Description: QXmpp library for XMPP client and server applications
  as easy to use as possible.
  .
  This package contains the shared library.
-
-Package: libqxmpp0-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: libqxmpp0 (= ${binary:Version}), ${misc:Depends}
-Multi-Arch: same
-Description: Debugging symbols for the QXmpp library
- QXmpp is a cross-platform C++ XMPP library built upon Qt. It strives to be
- as easy to use as possible.
- .
- This package contains the debugging symbols.
 
 Package: libqxmpp-dev
 Section: libdevel
