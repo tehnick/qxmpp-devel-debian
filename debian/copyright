@@ -1,11 +1,10 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Debianized-By: Jeremy Lainé <jeremy.laine@m4x.org>
 Debianized-Date: Wed, 11 Aug 2010 10:55:24 +0200
 Upstream-Name: QXmpp
 Upstream-Contact: Jeremy Lainé <jeremy.laine@m4x.org>
 Source: https://github.com/qxmpp-project/qxmpp/tags
  The orig.tar.gz is just renamed upstream tarball (without changes).
- See section get-orig-source in debian/rules file for details.
 
 Files: *
 Copyright: 2008-2015 The QXmpp developers (https://github.com/qxmpp-project/qxmpp)
@@ -21,8 +20,8 @@ Copyright: 2012 Jeremy Lainé <jeremy.laine@m4x.org>
 License: LGPL-2.1+ or GPL-3
 
 Files: debian/*
-Copyright: 2010-2015 Jeremy Lainé <jeremy.laine@m4x.org>
-           2012-2015 Boris Pek <tehnick-8@mail.ru>
+Copyright: 2010-2018 Jeremy Lainé <jeremy.laine@m4x.org>
+           2012-2018 Boris Pek <tehnick-8@mail.ru>
 License: LGPL-2.1+
 
 License: GPL-3
