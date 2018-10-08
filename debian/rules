@@ -1,34 +1,28 @@
 #!/usr/bin/make -f
 
-PACKAGE = qxmpp
-
-DEBIAN_PATH := $(abspath $(dir $(MAKEFILE_LIST)))
-USCAN_REPORT = $(shell uscan --noconf --report --dehs $(DEBIAN_PATH))
-CUR_VER = $(shell echo "$(USCAN_REPORT)" | sed -n 's/.*<upstream-version>\(.*\)<\/upstream-version>.*/\1/p')
-CUR_URL = $(shell echo "$(USCAN_REPORT)" | sed -n 's/.*<upstream-url>\(.*\)<\/upstream-url>.*/\1/p')
-
 export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 export QT_SELECT = qt5
 
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+
+CMAKEOPTS = -DLIB_INSTALL_DIR="/usr/lib/$(DEB_HOST_MULTIARCH)" \
+            -DBUILD_DOCUMENTATION_KDE=OFF \
+            -DBUILD_EXAMPLES=ON \
+            -DBUILD_TESTS=ON \
+            -DWITH_SPEEX=ON \
+            -DWITH_OPUS=ON \
+            -DWITH_THEORA=ON \
+            -DWITH_VPX=ON
+
 %:
-	dh $@ --parallel --list-missing
+	dh $@ --parallel
 
 override_dh_auto_configure:
-	dh_auto_configure -- LIBDIR=lib/$(DEB_HOST_MULTIARCH) \
-		QXMPP_USE_DOXYGEN=1 \
-		QXMPP_USE_OPUS=1 \
-		QXMPP_USE_SPEEX=1 \
-		QXMPP_USE_THEORA=1 \
-		QXMPP_USE_VPX=1
-
-.PHONY: override_dh_auto_test-indep
+	dh_auto_configure -- $(CMAKEOPTS)
 
 override_dh_installdocs:
 	dh_installdocs
 	dh_doxygen -i
 
-override_dh_strip:
-	dh_strip --dbg-package=libqxmpp0-dbg
-
-get-orig-source:
-	wget -c "$(CUR_URL)" -O "$(PACKAGE)_$(CUR_VER).orig.tar.gz"
+.PHONY: override_dh_auto_test-indep
