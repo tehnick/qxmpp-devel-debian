@@ -1,3 +1,9 @@
+qxmpp-devel (0.9.3-67-g5559ed2-0ppa1~cosmic1) cosmic; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Thu, 01 Nov 2018 00:51:41 +0300
+
 qxmpp-devel (0.9.3-66-g3e2ca3c-0ppa1~cosmic1) cosmic; urgency=medium
 
   * New Git snapshot.
