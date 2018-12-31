@@ -12,7 +12,7 @@ Build-Depends: cmake,
                libtheora-dev,
                libvpx-dev,
                qtbase5-dev
-Standards-Version: 4.2.1
+Standards-Version: 4.3.0
 Homepage: https://github.com/qxmpp-project/qxmpp
 Vcs-Git: https://github.com/tehnick/qxmpp-devel-debian.git
 Vcs-Browser: https://github.com/tehnick/qxmpp-devel-debian
