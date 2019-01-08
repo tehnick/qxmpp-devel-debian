@@ -7,17 +7,18 @@ Source: https://github.com/qxmpp-project/qxmpp/tags
  The orig.tar.gz is just renamed upstream tarball (without changes).
 
 Files: *
-Copyright: 2008-2015 The QXmpp developers (https://github.com/qxmpp-project/qxmpp)
+Copyright: 2008-2019 The QXmpp developers (https://github.com/qxmpp-project/qxmpp)
 Comment: Upstream Authors:
          2008-2014 Manjeet Dahiya <manjeetdahiya@gmail.com>
-         2008-2015 Jeremy Lainé <jeremy.laine@m4x.org>
+         2008-2019 Jeremy Lainé <jeremy.laine@m4x.org>
          2008-2012 Ian Reinhart Geiser <geiseri@kde.org>
          2011-2014 Georg Rudoy <0xd34df00d@gmail.com>
+         2017-2018 Niels Ole Salscheider <niels_ole@salscheider-online.de>
 License: LGPL-2.1+
 
 Files: debian/*
 Copyright: 2010-2018 Jeremy Lainé <jeremy.laine@m4x.org>
-           2012-2018 Boris Pek <tehnick-8@mail.ru>
+           2012-2019 Boris Pek <tehnick-8@yandex.ru>
 License: LGPL-2.1+
 
 License: LGPL-2.1+
