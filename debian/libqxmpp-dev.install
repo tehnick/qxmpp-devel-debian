@@ -1,3 +1,4 @@
 usr/include/
+usr/lib/*/cmake/
 usr/lib/*/libqxmpp.so
 usr/lib/*/pkgconfig/qxmpp.pc
