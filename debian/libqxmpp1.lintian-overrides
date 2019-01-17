@@ -1,0 +1,2 @@
+# There is no stable ABI in this library.
+libqxmpp1: no-symbols-control-file usr/lib/*/libqxmpp.so.*
