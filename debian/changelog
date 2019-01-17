@@ -1,8 +1,8 @@
-qxmpp-devel (1.0.0+5+gbce9ca4-0ppa1~cosmic1) cosmic; urgency=medium
+qxmpp-devel (1.0.0-5-gbce9ca4-0ppa1~cosmic1) cosmic; urgency=medium
 
   * New Git snapshot.
 
- -- Boris Pek <tehnick@debian.org>  Fri, 18 Jan 2019 00:04:33 +0300
+ -- Boris Pek <tehnick@debian.org>  Fri, 18 Jan 2019 00:12:44 +0300
 
 qxmpp-devel (1.0.0-0ppa1~cosmic1) cosmic; urgency=medium
 
