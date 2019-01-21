@@ -1,3 +1,9 @@
+qxmpp-devel (1.0.0-7-g95063b1-0ppa1~disco1) disco; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Mon, 21 Jan 2019 22:44:39 +0300
+
 qxmpp-devel (1.0.0-6-g2a34abc-0ppa1~disco1) disco; urgency=medium
 
   * New Git snapshot.
