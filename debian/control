@@ -19,7 +19,8 @@ Vcs-Browser: https://github.com/tehnick/qxmpp-devel-debian
 
 Package: libqxmpp2
 Architecture: any
-Pre-Depends: ${misc:Pre-Depends}
+Replaces: libqxmpp0, libqxmpp1
+Breaks: libqxmpp0, libqxmpp1
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Multi-Arch: same
 Description: QXmpp library for XMPP client and server applications
