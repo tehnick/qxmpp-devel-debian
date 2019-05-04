@@ -1,3 +1,9 @@
+qxmpp-devel (1.0.0-20-g9c8fea8-0ppa1~eoan1) eoan; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Sun, 05 May 2019 00:11:42 +0300
+
 qxmpp-devel (1.0.0-17-g34a9bf3-0ppa1~eoan1) eoan; urgency=medium
 
   * New Git snapshot.
