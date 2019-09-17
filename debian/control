@@ -1,7 +1,7 @@
 Source: qxmpp-devel
 Section: libs
 Priority: optional
-Maintainer: Debian XMPP Maintainers <pkg-xmpp-devel@alioth-lists.debian.net>
+Maintainer: Debian XMPP Maintainers <pkg-xmpp-devel@lists.alioth.debian.org>
 Uploaders: Jeremy Lainé <jeremy.laine@m4x.org>, Boris Pek <tehnick@debian.org>
 Build-Depends: cmake,
                debhelper (>= 11~),
