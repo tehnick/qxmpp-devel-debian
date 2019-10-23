@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian XMPP Maintainers <pkg-xmpp-devel@alioth-lists.debian.net>
 Uploaders: Jeremy Lainé <jeremy.laine@m4x.org>, Boris Pek <tehnick@debian.org>
 Build-Depends: cmake,
-               debhelper (>= 9),
+               debhelper (>= 11~),
                doxygen,
                graphviz,
                libopus-dev,
