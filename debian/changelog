@@ -1,3 +1,9 @@
+qxmpp-devel (1.1.0+8+gf8c546c-0ppa1~focal1) focal; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Tue, 29 Oct 2019 01:20:18 +0300
+
 qxmpp-devel (1.1.0+6+g9603290-0ppa1~focal1) focal; urgency=medium
 
   * New Git snapshot.
