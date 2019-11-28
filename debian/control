@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian XMPP Maintainers <pkg-xmpp-devel@lists.alioth.debian.org>
 Uploaders: Jeremy Lainé <jeremy.laine@m4x.org>, Boris Pek <tehnick@debian.org>
 Build-Depends: cmake,
-               debhelper-compat (11),
+               debhelper-compat (= 11),
                doxygen,
                graphviz,
                libopus-dev,
@@ -13,6 +13,7 @@ Build-Depends: cmake,
                libvpx-dev,
                qtbase5-dev
 Standards-Version: 4.4.1
+Rules-Requires-Root: no
 Homepage: https://github.com/qxmpp-project/qxmpp
 Vcs-Git: https://github.com/tehnick/qxmpp-devel-debian.git
 Vcs-Browser: https://github.com/tehnick/qxmpp-devel-debian
