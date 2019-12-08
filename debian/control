@@ -18,10 +18,10 @@ Homepage: https://github.com/qxmpp-project/qxmpp
 Vcs-Git: https://github.com/tehnick/qxmpp-devel-debian.git
 Vcs-Browser: https://github.com/tehnick/qxmpp-devel-debian
 
-Package: libqxmpp2
+Package: libqxmpp3
 Architecture: any
-Replaces: libqxmpp0, libqxmpp1
-Breaks: libqxmpp0, libqxmpp1
+Replaces: libqxmpp0, libqxmpp1, libqxmpp2
+Breaks: libqxmpp0, libqxmpp1, libqxmpp2
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Multi-Arch: same
 Description: QXmpp library for XMPP client and server applications
@@ -33,7 +33,7 @@ Description: QXmpp library for XMPP client and server applications
 Package: libqxmpp-dev
 Section: libdevel
 Architecture: any
-Depends: libqxmpp2 (= ${binary:Version}), qtbase5-dev, ${misc:Depends}
+Depends: libqxmpp3 (= ${binary:Version}), qtbase5-dev, ${misc:Depends}
 Suggests: libqxmpp-doc
 Multi-Arch: same
 Description: Development files for the QXmpp library
