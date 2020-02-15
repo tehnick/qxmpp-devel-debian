@@ -1,3 +1,9 @@
+qxmpp-devel (1.2.0+13+g46c5e6b9-0ppa1~focal1) focal; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Sat, 15 Feb 2020 15:19:49 +0300
+
 qxmpp-devel (1.2.0+12+ge25e11ee-0ppa1~focal1) focal; urgency=medium
 
   * New Git snapshot.
