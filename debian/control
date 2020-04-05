@@ -19,7 +19,11 @@ Package: libqxmpp3
 Architecture: any
 Replaces: libqxmpp0, libqxmpp1, libqxmpp2
 Breaks: libqxmpp0, libqxmpp1, libqxmpp2
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: gstreamer1.0-plugins-base,
+         gstreamer1.0-plugins-good,
+         gstreamer1.0-plugins-ugly,
+         ${misc:Depends},
+         ${shlibs:Depends}
 Multi-Arch: same
 Description: QXmpp library for XMPP client and server applications
  QXmpp is a cross-platform C++ XMPP library built upon Qt. It strives to be
