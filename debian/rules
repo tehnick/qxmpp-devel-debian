@@ -6,10 +6,7 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 CMAKEOPTS = -DBUILD_DOCUMENTATION=ON \
             -DBUILD_EXAMPLES=ON \
             -DBUILD_TESTS=OFF \
-            -DWITH_SPEEX=ON \
-            -DWITH_OPUS=ON \
-            -DWITH_THEORA=ON \
-            -DWITH_VPX=ON
+            -DWITH_GSTREAMER=ON
 
 %:
 	dh $@
