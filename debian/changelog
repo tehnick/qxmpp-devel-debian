@@ -1,398 +1,106 @@
-qxmpp-devel (1.3.0-0ppa1~focal1) focal; urgency=medium
+qxmpp (1.2.1-0ppa1~focal1) focal; urgency=medium
+
+  * New stable release.
 
-  * New Git snapshot.
+ -- Boris Pek <tehnick@debian.org>  Thu, 02 Apr 2020 02:14:57 +0300
 
- -- Boris Pek <tehnick@debian.org>  Tue, 07 Apr 2020 00:32:47 +0300
+qxmpp (1.2.0-1ppa1~focal1) focal; urgency=medium
 
-qxmpp-devel (1.2.1+61+gb833a5ae-0ppa1~focal1) focal; urgency=medium
+  * Sync with package in Debian.
+  * Decrease debhelper-compat version to 11.
 
-  * New Git snapshot.
+ -- Boris Pek <tehnick@debian.org>  Mon, 24 Feb 2020 22:25:28 +0300
 
- -- Boris Pek <tehnick@debian.org>  Mon, 06 Apr 2020 00:47:04 +0300
+qxmpp (1.2.0-1) experimental; urgency=medium
 
-qxmpp-devel (1.2.0+14+ga7f80170-0ppa1~focal1) focal; urgency=medium
+  * New upstream release.
+  * Rename libqxmpp2 to libqxmpp3 after bumping of SOVERSION.
+  * Update debian/control:
+    - bump Standards-Version to 4.5.0 (was 4.4.1): no changes required
+    - package libqxmpp3 replaces old libqxmpp2 package
+  * Update debian/copyright.
 
-  * New Git snapshot.
+ -- Boris Pek <tehnick@debian.org>  Mon, 24 Feb 2020 20:45:25 +0300
 
- -- Boris Pek <tehnick@debian.org>  Thu, 12 Mar 2020 00:00:09 +0300
+qxmpp (1.1.0-1) experimental; urgency=medium
 
-qxmpp-devel (1.2.0+13+g46c5e6b9-0ppa1~focal1) focal; urgency=medium
+  * New upstream release.
+  * Delete all patches: already in upstream.
+  * Bump Standards-Version to 4.4.1 (was 4.3.0): no changes required.
+  * Rename libqxmpp1 to libqxmpp2 after bumping of SOVERSION.
+  * Package libqxmpp2 now replaces libqxmpp0 and libqxmpp1 packages.
+  * Update debian/copyright and debian/upstream/metadata.
+  * Update debian/control:
+    - add "Rules-Requires-Root: no"
+    - replace build dependency from debhelper (>= 12~) to
+      debhelper-compat (= 12)
+  * Delete debian/compat.
 
-  * New Git snapshot.
+ -- Boris Pek <tehnick@debian.org>  Thu, 21 Nov 2019 00:55:29 +0300
 
- -- Boris Pek <tehnick@debian.org>  Sat, 15 Feb 2020 15:19:49 +0300
+qxmpp (1.0.0-5) unstable; urgency=medium
 
-qxmpp-devel (1.2.0+12+ge25e11ee-0ppa1~focal1) focal; urgency=medium
+  * Add patch fix-segfault-on-connection-error:
+    fixes potential SEGFAULT on connection error.
 
-  * New Git snapshot.
+ -- Boris Pek <tehnick@debian.org>  Thu, 21 Nov 2019 00:18:31 +0300
 
- -- Boris Pek <tehnick@debian.org>  Sat, 15 Feb 2020 01:21:33 +0300
+qxmpp (1.0.0-4) unstable; urgency=medium
 
-qxmpp-devel (1.2.0+11+g5ec472c0-0ppa1~focal1) focal; urgency=medium
+  * Update debian/control:
+    - package libqxmpp1 now Breaks and Replaces package libqxmpp0
+      (Closes: #919788)
+    - remove Pre-Depends field from package libqxmpp1
 
-  * New Git snapshot.
+ -- Boris Pek <tehnick@debian.org>  Sat, 19 Jan 2019 21:56:20 +0300
 
- -- Boris Pek <tehnick@debian.org>  Thu, 13 Feb 2020 23:14:00 +0300
+qxmpp (1.0.0-3) unstable; urgency=medium
 
-qxmpp-devel (1.2.0+10+g5049805f-0ppa1~focal1) focal; urgency=medium
+  * Move to unstable: no changes required.
+  * Add debian/libqxmpp1.lintian-overrides: notice that there is no stable ABI
+    in this library, only stable API is available.
 
-  * New Git snapshot.
+ -- Boris Pek <tehnick@debian.org>  Sat, 19 Jan 2019 00:12:57 +0300
 
- -- Boris Pek <tehnick@debian.org>  Wed, 12 Feb 2020 01:59:44 +0300
+qxmpp (1.0.0-2) experimental; urgency=medium
 
-qxmpp-devel (1.2.0+8+g279b92da-0ppa1~focal1) focal; urgency=medium
+  * Add patch bump-SONAME. (Closes: #919487)
+  * Rename package libqxmpp0 to libqxmpp1.
+  * Update debian/libqxmpp-dev.install: add cmake files.
 
-  * New Git snapshot.
+ -- Boris Pek <tehnick@debian.org>  Fri, 18 Jan 2019 01:11:28 +0300
 
- -- Boris Pek <tehnick@debian.org>  Tue, 11 Feb 2020 22:28:01 +0300
+qxmpp (1.0.0-1) unstable; urgency=medium
 
-qxmpp-devel (1.2.0+2+gbfd26369-0ppa1~focal1) focal; urgency=medium
+  * New upstream release.
+  * Delete all patches.
+  * Bump debhelper version to 12~ (was 9); update debian/compat.
+  * Update debian/control:
+    - set Debian XMPP Maintainers as Maintainer
+    - move Jeremy Lainé to Uploaders
+    - add build dependency from cmake
+    - bump Standards-Version to 4.3.0 (was 3.9.6): see changes below
+    - update Vcs-* fields: moved from Alioth to Salsa
+    - delete package libqxmpp0-dbg: see AutomaticDebugPackages initiative
+      (after updating of debian/compat)
+  * Rewrite debian/rules:
+    - switch to cmake build system
+      (after changes in upstream)
+    - enable all hardening flags
+    - delete get-orig-source section
+      (after bumping of Standards-Version)
+    - delete override_dh_strip section
+      (after deleting of libqxmpp0-dbg package)
+    - delete --parallel and --list-missing options from dh
+      (after updating of debian/compat)
+  * Add debian/source/lintian-overrides.
+  * Add debian/libqxmpp-doc.examples.
+  * Add debian/upstream/metadata.
+  * Cosmetic changes in debian/watch.
+  * Update debian/libqxmpp-doc.lintian-overrides.
+  * Update debian/copyright.
 
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 11 Feb 2020 01:26:55 +0300
-
-qxmpp-devel (1.2.0+1+g964e7458-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Thu, 06 Feb 2020 22:35:50 +0300
-
-qxmpp-devel (1.1.0+53+ga4d292ec-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Thu, 06 Feb 2020 00:21:43 +0300
-
-qxmpp-devel (1.1.0+46+gdf86ae17-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Mon, 03 Feb 2020 23:54:51 +0300
-
-qxmpp-devel (1.1.0+40+g7472d8d8-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Wed, 29 Jan 2020 22:23:12 +0300
-
-qxmpp-devel (1.1.0+35+gc9b301d7-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Wed, 29 Jan 2020 00:48:03 +0300
-
-qxmpp-devel (1.1.0+34+ge4c9336b-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Mon, 20 Jan 2020 21:31:41 +0300
-
-qxmpp-devel (1.1.0+30+gcccb7675-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sun, 19 Jan 2020 23:40:33 +0300
-
-qxmpp-devel (1.1.0+27+g5f46963c-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Thu, 16 Jan 2020 02:51:18 +0300
-
-qxmpp-devel (1.1.0+24+ge148045e-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 31 Dec 2019 03:20:23 +0300
-
-qxmpp-devel (1.1.0+23+gee218192-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sun, 22 Dec 2019 17:04:00 +0300
-
-qxmpp-devel (1.1.0+22+g4d61ddd5-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Wed, 11 Dec 2019 01:29:48 +0300
-
-qxmpp-devel (1.1.0+21+gd40b65c1-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Mon, 09 Dec 2019 02:07:26 +0300
-
-qxmpp-devel (1.1.0+17+g0e06c636-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sun, 08 Dec 2019 22:28:09 +0300
-
-qxmpp-devel (1.1.0+10+g23062f74-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Fri, 29 Nov 2019 00:54:37 +0300
-
-qxmpp-devel (1.1.0+8+gf8c546c5-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 05 Nov 2019 00:10:26 +0300
-
-qxmpp-devel (1.1.0+8+gf8c546c-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 29 Oct 2019 01:20:18 +0300
-
-qxmpp-devel (1.1.0+6+g9603290-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sat, 26 Oct 2019 21:18:35 +0300
-
-qxmpp-devel (1.1.0+5+g7f4b12f-0ppa1~eoan1) eoan; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Wed, 23 Oct 2019 21:46:42 +0300
-
-qxmpp-devel (1.0.1-50-g876c924-0ppa1~eoan1) eoan; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 22 Oct 2019 22:23:53 +0300
-
-qxmpp-devel (1.0.1-49-g70dfa23-0ppa1~eoan1) eoan; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Mon, 21 Oct 2019 23:19:22 +0300
-
-qxmpp-devel (1.0.1-42-g7a9d7b1-0ppa1~eoan1) eoan; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sat, 19 Oct 2019 23:06:25 +0300
-
-qxmpp-devel (1.0.1-39-g38d0769-0ppa1~eoan1) eoan; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Wed, 16 Oct 2019 00:35:20 +0300
-
-qxmpp-devel (1.0.1-35-g926536f-0ppa1~eoan1) eoan; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 15 Oct 2019 00:04:03 +0300
-
-qxmpp-devel (1.0.0-33-gb18a57d-0ppa1~eoan1) eoan; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 10 Sep 2019 22:57:24 +0300
-
-qxmpp-devel (1.0.0-31-ge7394af-0ppa1~eoan1) eoan; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Fri, 06 Sep 2019 22:34:25 +0300
-
-qxmpp-devel (1.0.0-25-ge681ec9-0ppa1~eoan1) eoan; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 03 Sep 2019 22:30:33 +0300
-
-qxmpp-devel (1.0.0-23-ge6eb0b7-0ppa1~eoan1) eoan; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Thu, 16 May 2019 00:13:27 +0300
-
-qxmpp-devel (1.0.0-22-g8e48288-0ppa1~eoan1) eoan; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 07 May 2019 01:35:00 +0300
-
-qxmpp-devel (1.0.0-20-g9c8fea8-0ppa1~eoan1) eoan; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sun, 05 May 2019 00:11:42 +0300
-
-qxmpp-devel (1.0.0-17-g34a9bf3-0ppa1~eoan1) eoan; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sat, 04 May 2019 15:18:11 +0300
-
-qxmpp-devel (1.0.0-14-g754cc5a-0ppa2~eoan1) eoan; urgency=medium
-
-  * Provide proper replacement for libqxmpp0 and libqxmpp1 packages.
-
- -- Boris Pek <tehnick@debian.org>  Sat, 04 May 2019 00:19:12 +0300
-
-qxmpp-devel (1.0.0-14-g754cc5a-0ppa1~eoan1) eoan; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Fri, 03 May 2019 22:44:06 +0300
-
-qxmpp-devel (1.0.0-8-g9df7e7f-0ppa1~disco1) disco; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Fri, 01 Feb 2019 21:44:50 +0300
-
-qxmpp-devel (1.0.0-7-g95063b1-0ppa1~disco1) disco; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Mon, 21 Jan 2019 22:44:39 +0300
-
-qxmpp-devel (1.0.0-6-g2a34abc-0ppa1~disco1) disco; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sat, 19 Jan 2019 01:37:55 +0300
-
-qxmpp-devel (1.0.0-5-gbce9ca4-0ppa1~cosmic1) cosmic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Fri, 18 Jan 2019 00:12:44 +0300
-
-qxmpp-devel (1.0.0-0ppa1~cosmic1) cosmic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 08 Jan 2019 12:07:51 +0300
-
-qxmpp-devel (0.9.3-78-ge24ed7b-0ppa1~cosmic1) cosmic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sun, 06 Jan 2019 21:21:59 +0300
-
-qxmpp-devel (0.9.3-76-g4231f55-0ppa1~cosmic1) cosmic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sat, 05 Jan 2019 14:03:29 +0300
-
-qxmpp-devel (0.9.3-71-g1d838fb-0ppa1~cosmic1) cosmic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Mon, 31 Dec 2018 21:32:44 +0300
-
-qxmpp-devel (0.9.3-70-gfc38973-0ppa1~cosmic1) cosmic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Thu, 20 Dec 2018 02:25:35 +0300
-
-qxmpp-devel (0.9.3-69-g5b0b647-0ppa1~cosmic1) cosmic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Thu, 29 Nov 2018 21:57:15 +0300
-
-qxmpp-devel (0.9.3-67-g5559ed2-0ppa1~cosmic1) cosmic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Thu, 01 Nov 2018 00:51:41 +0300
-
-qxmpp-devel (0.9.3-66-g3e2ca3c-0ppa1~cosmic1) cosmic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sun, 28 Oct 2018 11:14:09 +0300
-
-qxmpp-devel (0.9.3-65-g1142a9d-0ppa2~cosmic1) cosmic; urgency=medium
-
-  * Some fixes in package.
-
- -- Boris Pek <tehnick@debian.org>  Fri, 19 Oct 2018 02:26:10 +0300
-
-qxmpp-devel (0.9.3-65-g1142a9d-0ppa1~cosmic1) cosmic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Thu, 11 Oct 2018 02:43:53 +0300
-
-qxmpp-devel (0.9.3-63-gb74badb-0ppa1~cosmic1) cosmic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Mon, 08 Oct 2018 04:27:42 +0300
-
-qxmpp-devel (0.9.3-19-gea83c77-0ppa1~bionic1) bionic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Fri, 30 Mar 2018 00:38:50 +0300
-
-qxmpp-devel (0.9.3-18-g2416d50-0ppa1~bionic1) bionic; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Fri, 02 Mar 2018 02:23:21 +0300
-
-qxmpp-devel (0.9.3-17-g5804795-0ppa1~zesty1) zesty; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Fri, 05 May 2017 02:25:50 +0300
-
-qxmpp-devel (0.9.3-14-g084eb01-0ppa1~zesty1) zesty; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Wed, 15 Feb 2017 00:38:23 +0300
-
-qxmpp-devel (0.9.3-13-g9deb86b-0ppa1~zesty1) zesty; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sat, 04 Feb 2017 00:21:31 +0300
-
-qxmpp-devel (0.9.3-9-g15293eb-0ppa1~yakkety1) yakkety; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 24 Jan 2017 23:03:07 +0300
-
-qxmpp-devel (0.9.3-8-g83516e3-0ppa1~yakkety1) yakkety; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Wed, 19 Oct 2016 16:35:57 +0300
-
-qxmpp-devel (0.9.3-7-g3419485-0ppa1~yakkety1) yakkety; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Wed, 14 Sep 2016 22:38:55 +0300
-
-qxmpp-devel (0.9.3-0ppa1~xenial1) xenial; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 02 Feb 2016 00:54:25 +0300
-
-qxmpp-devel (0.9.3-1ppa1~xenial1) xenial; urgency=medium
-
-  * Rebuild for Launchpad.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 02 Feb 2016 00:14:42 +0300
+ -- Boris Pek <tehnick@debian.org>  Tue, 08 Jan 2019 20:56:22 +0300
 
 qxmpp (0.9.3-1) unstable; urgency=medium
 
