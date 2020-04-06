@@ -1,4 +1,10 @@
-qxmpp (1.2.1-0ppa1~focal1) focal; urgency=medium
+qxmpp-devel (1.3.0+1+g2fdb098e-0ppa1~focal1) focal; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Tue, 07 Apr 2020 01:00:15 +0300
+
+qxmpp-devel (1.2.1-0ppa1~focal1) focal; urgency=medium
 
   * New stable release.
 
