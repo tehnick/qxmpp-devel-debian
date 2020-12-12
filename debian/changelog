@@ -1,93 +1,39 @@
-qxmpp-devel (1.3.1+39+gb919c654-0ppa1~hirsute1) hirsute; urgency=medium
+qxmpp (1.3.1-1ppa2~hirsute1) hirsute; urgency=medium
 
-  * New Git snapshot.
+  * Add -Wl,--as-needed flag to LDFLAGS in debian/rules.
 
- -- Boris Pek <tehnick@debian.org>  Sat, 12 Dec 2020 02:53:15 +0300
+ -- Boris Pek <tehnick@debian.org>  Sat, 12 Dec 2020 13:17:13 +0300
 
-qxmpp-devel (1.3.1+38+g7b46c85e-0ppa1~hirsute1) hirsute; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sun, 01 Nov 2020 13:05:40 +0300
-
-qxmpp-devel (1.3.1+35+g86645242-0ppa1~hirsute1) hirsute; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sat, 31 Oct 2020 21:15:22 +0300
-
-qxmpp-devel (1.3.1+34+g8d1f783e-0ppa1~groovy1) groovy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sun, 11 Oct 2020 20:32:56 +0300
-
-qxmpp-devel (1.3.1+33+g8cfb21e9-0ppa1~groovy1) groovy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sun, 11 Oct 2020 12:40:17 +0300
-
-qxmpp-devel (1.3.1+22+gc81e6d59-0ppa1~groovy1) groovy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Wed, 26 Aug 2020 21:34:06 +0300
-
-qxmpp-devel (1.3.1+20+ge459778b-0ppa1~groovy1) groovy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sun, 02 Aug 2020 22:18:48 +0300
-
-qxmpp-devel (1.3.0+19+gd1978692-0ppa1~groovy1) groovy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Sun, 12 Jul 2020 23:05:52 +0300
-
-qxmpp-devel (1.3.0+16+g8d6f865a-0ppa1~groovy1) groovy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Fri, 03 Jul 2020 03:18:53 +0300
-
-qxmpp-devel (1.3.0+9+g79e40463-0ppa1~groovy1) groovy; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 19 May 2020 01:54:08 +0300
-
-qxmpp-devel (1.3.0+7+gfe83e9c3-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Fri, 10 Apr 2020 01:29:34 +0300
-
-qxmpp-devel (1.3.0+5+gb1678043-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Wed, 08 Apr 2020 00:39:18 +0300
-
-qxmpp-devel (1.3.0+1+g2fdb098e-0ppa1~focal1) focal; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Tue, 07 Apr 2020 01:00:15 +0300
-
-qxmpp-devel (1.2.1-0ppa1~focal1) focal; urgency=medium
-
-  * New stable release.
-
- -- Boris Pek <tehnick@debian.org>  Thu, 02 Apr 2020 02:14:57 +0300
-
-qxmpp (1.2.0-1ppa1~focal1) focal; urgency=medium
+qxmpp (1.3.1-1ppa1~hirsute1) hirsute; urgency=medium
 
   * Sync with package in Debian.
   * Decrease debhelper-compat version to 11.
 
- -- Boris Pek <tehnick@debian.org>  Mon, 24 Feb 2020 22:25:28 +0300
+ -- Boris Pek <tehnick@debian.org>  Sat, 12 Dec 2020 13:05:21 +0300
+
+qxmpp (1.3.1-1) experimental; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * Add salsa-ci.yml pipeline for GitLab CI/CD on Salsa.
+
+  [ Boris Pek ]
+  * New upstream release.
+  * Update debian/control:
+    - bump Standards-Version to 4.5.1 (was 4.5.0): no changes required
+    - bump debhelper-compat version to 13 (was 12)
+    - remove build dependencies from libopus-dev, libspeex-dev, libtheora-dev
+      and libvpx-dev
+    - add build dependency from libgstreamer1.0-dev
+    - add extra dependencies from gstreamer1.0-plugins-base,
+      gstreamer1.0-plugins-good and gstreamer1.0-plugins-ugly to binary package
+      libqxmpp3
+  * Update debian/rules:
+    - update configuration options after switching library to gstreamer usage
+    - remove DEB_LDFLAGS_MAINT_APPEND variable with -Wl,--as-needed flag
+  * Bump debian/watch version to 4: no changes required.
+  * Update debian/copyright.
+
+ -- Boris Pek <tehnick@debian.org>  Sat, 12 Dec 2020 03:57:50 +0300
 
 qxmpp (1.2.0-1) experimental; urgency=medium
 
