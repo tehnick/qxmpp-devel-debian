@@ -1,4 +1,11 @@
-qxmpp (1.3.1-1ppa2~hirsute1) hirsute; urgency=medium
+qxmpp-devel (1.3.1+39+gb919c654-0ppa2~hirsute1) hirsute; urgency=medium
+
+  * Sync with stable qxmpp package.
+  * Clean changelog.
+
+ -- Boris Pek <tehnick@debian.org>  Sat, 12 Dec 2020 13:22:41 +0300
+
+qxmpp-devel (1.3.1-1ppa2~hirsute1) hirsute; urgency=medium
 
   * Add -Wl,--as-needed flag to LDFLAGS in debian/rules.
 
