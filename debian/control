@@ -34,7 +34,10 @@ Description: QXmpp library for XMPP client and server applications
 Package: libqxmpp-dev
 Section: libdevel
 Architecture: any
-Depends: libqxmpp3 (= ${binary:Version}), qtbase5-dev, ${misc:Depends}
+Depends: libgstreamer1.0-dev,
+         libqxmpp3 (= ${binary:Version}),
+         qtbase5-dev,
+         ${misc:Depends}
 Suggests: libqxmpp-doc
 Multi-Arch: same
 Description: Development files for the QXmpp library
