@@ -1,3 +1,9 @@
+qxmpp-devel (1.4.0+8+g729b2dfa-0ppa1~hirsute1) hirsute; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Thu, 18 Mar 2021 01:21:33 +0300
+
 qxmpp-devel (1.4.0+1+g5b88efb6-0ppa1~hirsute1) hirsute; urgency=medium
 
   * New Git snapshot.
