@@ -1,3 +1,9 @@
+qxmpp-devel (1.4.0+43+gcd3f9444-0ppa1~impish1) impish; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Tue, 29 Jun 2021 02:41:07 +0300
+
 qxmpp-devel (1.4.0+34+g826ece04-0ppa1~impish1) impish; urgency=medium
 
   * New Git snapshot.
