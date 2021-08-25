@@ -15,10 +15,10 @@ Homepage: https://github.com/qxmpp-project/qxmpp
 Vcs-Git: https://github.com/tehnick/qxmpp-devel-debian.git
 Vcs-Browser: https://github.com/tehnick/qxmpp-devel-debian
 
-Package: libqxmpp3
+Package: libqxmpp4
 Architecture: any
-Replaces: libqxmpp0, libqxmpp1, libqxmpp2
-Breaks: libqxmpp0, libqxmpp1, libqxmpp2
+Replaces: libqxmpp1, libqxmpp2, libqxmpp3
+Breaks: libqxmpp1, libqxmpp2, libqxmpp3
 Depends: gstreamer1.0-plugins-base,
          gstreamer1.0-plugins-good,
          gstreamer1.0-plugins-ugly,
@@ -35,7 +35,7 @@ Package: libqxmpp-dev
 Section: libdevel
 Architecture: any
 Depends: libgstreamer1.0-dev,
-         libqxmpp3 (= ${binary:Version}),
+         libqxmpp4 (= ${binary:Version}),
          qtbase5-dev,
          ${misc:Depends}
 Suggests: libqxmpp-doc
