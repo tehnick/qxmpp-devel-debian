@@ -9,7 +9,7 @@ Build-Depends: cmake,
                graphviz,
                libgstreamer1.0-dev,
                qtbase5-dev
-Standards-Version: 4.5.1
+Standards-Version: 4.6.0
 Rules-Requires-Root: no
 Homepage: https://github.com/qxmpp-project/qxmpp
 Vcs-Git: https://github.com/tehnick/qxmpp-devel-debian.git
