@@ -7,7 +7,7 @@ Source: https://github.com/qxmpp-project/qxmpp/tags
  The orig.tar.gz is just renamed upstream tarball (without changes).
 
 Files: *
-Copyright: 2008-2021 The QXmpp developers (https://github.com/qxmpp-project/qxmpp)
+Copyright: 2008-2022 The QXmpp developers (https://github.com/qxmpp-project/qxmpp)
 Comment: Upstream Authors:
          2008-2014 Manjeet Dahiya <manjeetdahiya@gmail.com>
          2008-2019 Jeremy Lainé <jeremy.laine@m4x.org>
