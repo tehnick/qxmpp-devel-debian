@@ -1,3 +1,9 @@
+qxmpp-devel (1.4.0+254+g402bb6f3-0ppa1~jammy1) jammy; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Sat, 14 May 2022 20:54:32 +0300
+
 qxmpp-devel (1.4.0+253+g8a9bae9f-0ppa1~jammy1) jammy; urgency=medium
 
   * New Git snapshot.
