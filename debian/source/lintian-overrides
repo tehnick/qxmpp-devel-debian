@@ -4,5 +4,5 @@
 debian-watch-does-not-check-gpg-signature
 
 # Hide useless notes:
-very-long-line-length-in-source-file README.*
-very-long-line-length-in-source-file LICENSES/*
+very-long-line-length-in-source-file *README.*
+very-long-line-length-in-source-file *LICENSES/*
