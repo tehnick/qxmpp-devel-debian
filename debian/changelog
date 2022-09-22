@@ -1,3 +1,9 @@
+qxmpp-devel (1.4.0+370+g9f474d28-0ppa1~kinetic1) kinetic; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Thu, 22 Sep 2022 23:32:10 +0300
+
 qxmpp-devel (1.4.0+294+g35ea5421-0ppa1~kinetic1) kinetic; urgency=medium
 
   * New Git snapshot.
