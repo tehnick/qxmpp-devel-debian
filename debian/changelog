@@ -1,14 +1,14 @@
+qxmpp-devel (1.5.1+6+g19efb789-0ppa1~lunar1) lunar; urgency=medium
+
+  * New Git snapshot.
+
+ -- Boris Pek <tehnick@debian.org>  Thu, 09 Feb 2023 01:17:51 +0300
+
 qxmpp-devel (1.5.1+5+gace1da0a-0ppa1~lunar1) lunar; urgency=medium
 
   * New Git snapshot.
 
  -- Boris Pek <tehnick@debian.org>  Wed, 08 Feb 2023 00:21:18 +0300
-
-qxmpp-devel (1.5.1+4+g9290e53d-0ppa1~lunar1) lunar; urgency=medium
-
-  * New Git snapshot.
-
- -- Boris Pek <tehnick@debian.org>  Thu, 02 Feb 2023 02:14:03 +0300
 
 qxmpp (1.5.1-0ppa1~lunar1) lunar; urgency=medium
 
